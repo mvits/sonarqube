@@ -1,4 +1,4 @@
-FROM openjdk:12-alpine
+FROM adoptopenjdk/openjdk11:alpine-nightly-slim
 
 ENV SONAR_VERSION=7.9.3 \
     SONARQUBE_HOME=/opt/sonarqube \
