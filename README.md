@@ -17,8 +17,11 @@ docker network create network-sonarqube
 docker run --name sonarqube-db -e POSTGRES_USER=sonar -e POSTGRES_PASSWORD=sonar -d -p 5432:5432 --net network-sonarqube postgres
 docker run --name sonarqube -p 9000:9000 -e SONARQUBE_JDBC_URL=jdbc:postgresql://sonarqube-db:5432/sonar -d --net network-sonarqube mvits/owasp-sonarqube
 ```
-The project contains:
-
+## Navigate Browser
+```
+http://localhost:9000/
+```
+## Project Content
 #### Sonarqube
 - Sonarqube version 7.9.3
 
